@@ -1,56 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/kine-mesh/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kine-Mesh | Карьерный апгрейд и стратегии роста</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/kine-mesh/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/kine-mesh/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/kine-mesh/assets/styles-B3sdtrOL.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
+    <div class="menu-overlay" id="menu-overlay">
+  <nav class="mobile-nav">
+    <ul class="mobile-nav__list">
+      <li><a href="./#hero" class="mobile-nav__link">Главная</a></li>
+      <li><a href="./#about" class="mobile-nav__link">О платформе</a></li>
+      <li><a href="./#benefits" class="mobile-nav__link">Преимущества</a></li>
+      <li><a href="./#innovations" class="mobile-nav__link">Инновации</a></li>
+      <li><a href="./#blog" class="mobile-nav__link">Блог</a></li>
+      <li><a href="./#contact" class="mobile-nav__link">Связаться</a></li>
+    </ul>
+  </nav>
+</div>
+
+<header class="header">
+  <div class="container header__container">
+    <a href="./#hero" class="logo">Kine-<span class="logo__accent">Mesh</span></a>
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="./#about" class="nav__link">О платформе</a></li>
+        <li><a href="./#benefits" class="nav__link">Преимущества</a></li>
+        <li><a href="./#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="./#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+    <a href="./#contact" class="btn btn--header">Начать сейчас</a>
+    <button class="burger" id="burger-menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
-
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+    <div class="container">
+        <div class="hero__content">
+            <span class="badge" data-aos="fade-up">Платформа года 2025</span>
+            <h1 class="hero__title" id="hero-title">Постройте карьеру, которая работает на вас</h1>
+            <p class="hero__subtitle">Инновационная технология карьерного апгрейда. Переосмыслите подход к развитию с
+                экспертной поддержкой на всех этапах.</p>
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--lg">Бесплатная консультация</a>
+                <a href="#about" class="btn btn--secondary">Узнать детали</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section about" id="about">
+    <div class="container grid-2">
+        <div class="about__image">
+            <img src="/kine-mesh/assets/one-D_qmP7EU.jpg" alt="Career Growth" class="brutal-img">
+        </div>
+        <div class="about__text">
+            <h2 class="section-title">Технология нового поколения</h2>
+            <p>Мы создали передовую цифровую инфраструктуру для тех, кто готов к взрывному росту. Наши AI-инструменты
+                для реальных задач позволяют оценить перспективы проекта и расширить горизонты карьеры.</p>
+            <ul class="check-list">
+                <li><i data-lucide="check-circle"></i> Легко разобраться без опыта</li>
+                <li><i data-lucide="check-circle"></i> Быстрый и лёгкий старт</li>
+                <li><i data-lucide="check-circle"></i> Решения, меняющие правила игры</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section benefits" id="benefits">
+    <div class="container">
+        <h2 class="section-title center">Ваши возможности</h2>
+        <div class="benefits__grid">
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="zap"></i></div>
+                <h3>Быстрый старт</h3>
+                <p>Подключение занимает 2 минуты. Удобная адаптация без лишних сложностей.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="trending-up"></i></div>
+                <h3>Стратегия роста</h3>
+                <p>Практики, применимые уже сегодня, на базе инноваций и реальных данных.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__icon"><i data-lucide="shield-check"></i></div>
+                <h3>Доверие</h3>
+                <p>Проверенный партнер с методологиями, доказавшими свою эффективность.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section innovations" id="innovations">
+    <div class="container">
+        <div class="brutal-box">
+            <h2 class="section-title">Инновации в доступе</h2>
+            <p>Платформа уже доступна в Европе. Откройте новые возможности для пассивного дохода и профессионального
+                развития. Доступ к платформе открыт для всех резидентов стран ЕС.</p>
+            <a href="#contact" class="btn">Запросить доступ</a>
+        </div>
+    </div>
+</section>
+
+<section class="section blog" id="blog">
+    <div class="container">
+        <h2 class="section-title">Блог: Инсайты и Кейсы</h2>
+        <div class="blog__grid">
+            <article class="blog-card">
+                <img src="/kine-mesh/assets/two-BGEAF_hw.jpg" alt="Post" class="blog-card__img">
+                <div class="blog-card__content">
+                    <span class="blog-card__date">24.12.2025</span>
+                    <h3>Как AI меняет рынок труда в Англии</h3>
+                    <p>Разбираем пошаговый путь, понятный каждому, для адаптации к новым условиям.</p>
+                    <a href="#contact" class="read-more">Читать далее →</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <img src="/kine-mesh/assets/three-D7lD8ijG.jpg" alt="Post" class="blog-card__img">
+                <div class="blog-card__content">
+                    <span class="blog-card__date">20.12.2025</span>
+                    <h3>5 стратегий для пассивного дохода</h3>
+                    <p>Воплотите мечты в реальность, используя наши проверенные инструменты.</p>
+                    <a href="#contact" class="read-more">Читать далее →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2 class="section-title">Есть вопросы?</h2>
+                <p>Заполните форму, и наш эксперт свяжется с вами для бесплатной консультации.</p>
+            </div>
+<form class="contact-form" id="main-form">
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" placeholder="E-mail" required>
+    </div>
+    <div class="form-group">
+        <input type="tel" id="phone" name="phone" placeholder="Телефон (только цифры)" required>
+    </div>
+    <div class="form-group captcha-box">
+        <label id="captcha-label" style="font-weight: bold; margin-right: 10px;"></label>
+        <input type="number" id="captcha-input" placeholder="Ответ" required style="width: 80px;">
+    </div>
+    <label class="checkbox-label">
+        <input type="checkbox" id="policy-check" required>
+        <span>Я согласен с политикой обработки персональных данных</span>
+    </label>
+    <button type="submit" class="btn btn--full">Отправить заявку</button>
+    <div id="form-status"
+        style="display:none; margin-top:15px; padding:10px; border:2px solid #1A1A1A; font-weight:bold;"></div>
+</form>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__grid">
+    <div class="footer__col footer__col--brand">
+      <a href="./#hero" class="logo footer__logo">Kine-Mesh</a>
+      <p class="footer__description">Технологии, которые работают на вас. Переосмыслите подход к развитию карьеры в
+        эпоху AI.</p>
+      <div class="footer__socials">
+        <a href="https://www.linkedin.com/" class="social-link"><i data-lucide="linkedin"></i></a>
+        <a href="https://twitter.com/" class="social-link"><i data-lucide="twitter"></i></a>
+        <a href="https://instagram.com/" class="social-link"><i data-lucide="instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Меню</h4>
+      <ul class="footer__list">
+        <li><a href="./#hero">Главная</a></li>
+        <li><a href="./#path">Путь развития</a></li>
+        <li><a href="./#insights">Инсайты</a></li>
+        <li><a href="./#blog">Блог</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Юридическая информация</h4>
+      <ul class="footer__list">
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+        <li><a href="./cookies.html">Cookie Policy</a></li>
+        <li><a href="./terms.html">Terms of Service</a></li>
+        <li><a href="./return.html">Return Policy</a></li>
+        <li><a href="./disclaimer.html">Disclaimer</a></li>
+        <li><a href="./personal-data-policy.html">Personal Data</a></li>
+      </ul>
+    </div>
+
+<div class="footer__col">
+  <h4 class="footer__title">London Office</h4>
+  <ul class="footer__contact-list">
+    <li>
+      <i data-lucide="phone"></i>
+      <a href="tel:+442079460123">+44 20 7946 0123</a>
+    </li>
+    <li>
+      <i data-lucide="mail"></i>
+      <a href="mailto:team@kine-mesh.blog">team@kine-mesh.blog</a>
+    </li>
+    <li>
+      <i data-lucide="map-pin"></i>
+      <span>22 Bishopsgate, London EC2N 4AJ, United Kingdom</span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class="container footer__bottom">
+    <p>&copy; 2025 Kine-Mesh. Платформа года. Предложение активно только в странах ЕС.</p>
   </div>
 </footer>
+    <div class="cookie-popup" id="cookie-popup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+      </p>
+      <button class="btn btn--sm" id="accept-cookies">Принять</button>
+    </div>
+<script src="https://unpkg.com/lucide@latest"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
+<script src="https://unpkg.com/split-type"></script>
+
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
   </body>
 </html>
