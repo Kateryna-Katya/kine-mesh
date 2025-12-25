@@ -568,3 +568,121 @@ ul {
     color: #1A1A1A;
     display: block !important;
 }
+/* --- Стили для юридических страниц (Pages) --- */
+.pages {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+}
+
+.page-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 50px;
+    background: var(--accent-color);
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 3px solid var(--border-color);
+    box-shadow: 10px 10px 0px var(--border-color);
+    transform: rotate(-1deg);
+}
+
+.legal-card {
+    background: white;
+    border: 3px solid var(--border-color);
+    padding: 60px;
+    box-shadow: 15px 15px 0px var(--border-color);
+    margin-top: 40px;
+}
+
+.legal-card h2 {
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--accent-light);
+    display: inline-block;
+}
+
+.legal-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Список в стиле брутализма */
+.brutal-list {
+    margin: 30px 0;
+}
+
+.brutal-list li {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid var(--border-color);
+    background: #f9f9f9;
+    position: relative;
+    padding-left: 50px;
+    transition: transform 0.2s ease;
+}
+
+.brutal-list li:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 0px var(--accent-color);
+}
+
+.brutal-list li::before {
+    content: '→';
+    position: absolute;
+    left: 15px;
+    font-weight: 900;
+    color: var(--accent-color);
+}
+
+/* Контактная зона */
+.contact-box {
+    margin-top: 60px;
+    padding: 30px;
+    background: var(--accent-light);
+    border: 3px solid var(--border-color);
+}
+
+.brutal-link {
+    font-weight: 700;
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.brutal-link:hover {
+    color: var(--text-color);
+    background: white;
+}
+
+/* Адаптив для мобилок */
+@media (max-width: 768px) {
+    .legal-card {
+        padding: 30px 20px;
+    }
+
+    .page-title {
+        transform: none;
+        font-size: 2rem;
+    }
+}
+.legal-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed var(--border-color);
+}
+
+.legal-section:last-of-type {
+    border-bottom: none;
+}
+
+.legal-section strong {
+    display: block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
