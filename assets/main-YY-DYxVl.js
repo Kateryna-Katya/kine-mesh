@@ -4,4 +4,4 @@
                         <p style="font-weight: 400; font-size: 0.9rem;">Ваша стратегия роста готова. Мы свяжемся с вами в течение 15 минут.</p>
                     </div>
                 `,s.style.background="#00FF94",s.style.color="#1A1A1A",e.reset(),a.disabled=!1,a.innerText="ОТПРАВИТЬ ПОВТОРНО",o&&(o.parentElement.style.opacity="0.3")},2e3)}}const t=document.getElementById("cookie-popup"),c=document.getElementById("accept-cookies");t&&!localStorage.getItem("kine_mesh_cookies")&&setTimeout(()=>{t.classList.add("active")},3e3),c&&(c.onclick=()=>{localStorage.setItem("kine_mesh_cookies","true"),t.classList.remove("active")})});
-//# sourceMappingURL=main-55LXHvRH.js.map
+//# sourceMappingURL=main-YY-DYxVl.js.map
